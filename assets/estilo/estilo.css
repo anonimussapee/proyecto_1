@@ -108,9 +108,11 @@ main div:nth-child(2){
 #sec_options{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
-#sec_options img{
+#sec_options img,a{
 width: 100%;
+text-align: center;
+color: black;
 }
