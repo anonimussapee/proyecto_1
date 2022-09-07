@@ -6,7 +6,7 @@ return valor_bd;
 }
 /*funcion para mostrar la tabla en html*/
 export function show_in_html(donde){
-    let etiquetas=`<th>PRODUCTO</th><th>CANTIDAD</th><th>COSTO</th><th>ID</th><th>OFERTA</th>`;
+    let etiquetas=`<caption>todos los productos disponibles</caption><th>PRODUCTO</th><th>CANTIDAD</th><th>COSTO</th><th>ID</th><th>OFERTA</th>`;
     for(var items of stock){
         etiquetas+=`<tr><td>${items.producto}</td><td>${items.cant}</td><td>${items.costo}</td><td>${items.id}</td><td>${items?.oferta}</td></tr>`;
     }
@@ -14,7 +14,7 @@ export function show_in_html(donde){
 }
 /*esta función busca los productos por el nombre*/
 export function search_for_name_id(where,word,checki){
-    var data=`<th>PRODUCTO</th><th>CANTIDAD</th><th>COSTO</th><th>ID</th><th>OFERTA</th>`;
+    var data=`<caption>Tú busqueda esta lista</caption><th>PRODUCTO</th><th>CANTIDAD</th><th>COSTO</th><th>ID</th><th>OFERTA</th>`;
     if(checki.checked){
         for(var items of stock){
             if(word==items.id){
