@@ -63,6 +63,7 @@ td, th{
 }
 #nav a:hover{
     color:white;
+    cursor:pointer;
 }
 div .h3_foot:nth-child(2):hover{
     color:white;
@@ -111,8 +112,14 @@ main div:nth-child(2){
     justify-content: space-evenly;
     
 }
-#sec_options img,a{
+#sec_options img,p{
 width: 100%;
 text-align: center;
 color: black;
+}
+#link_aniadir:hover{
+    cursor:copy;
+}
+.h3_aniadir{
+    text-align: center;
 }

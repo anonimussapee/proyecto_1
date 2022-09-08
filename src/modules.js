@@ -15,3 +15,8 @@ btn_search.addEventListener('click',async function(){
     var search=await import("./main.js");
     search.search_for_name_id(table_search_for_name,word_d,check_id_ref);
 });
+var btn_abrir_aniadir=document.getElementById("link_aniadir");
+btn_abrir_aniadir.addEventListener("click",async function(){
+    let abrir= await import("./main.js");
+    abrir.abrir_aniadir(table_search_for_name);
+})
