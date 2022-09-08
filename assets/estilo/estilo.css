@@ -10,6 +10,7 @@
 #section_table{
     display:flex;
 }
+/*bordes de tablas*/
 table{
     width:50%;
     border: #063758 3px solid;
@@ -44,6 +45,7 @@ table{
     grid-column: 5/6;
     font-size: 17px;
 }
+/*bordes de las tablas*/
 td, th{
     border-color: black;
     border: 1px;
@@ -52,25 +54,30 @@ td, th{
     text-align: center;
     padding: 3px;
 }
+/*estilo del nav bar*/
 #nav{
     background-color: #3D9FE1 ;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 10% 10% 1fr 1fr 1fr 10%;
 }
+/*tamaño de las letras del nav*/
 #nav a{
     font-size: large;
 }
+/*efecto al pasar el cursor por la opciones de nav bar*/
 #nav a:hover{
     color:white;
     cursor:pointer;
 }
+/*efecto al pasar el cursor del footer "ingenieros web"*/
 div .h3_foot:nth-child(2):hover{
     color:white;
 }
 body{
     margin: 0%;
 }
+/*contenedor del footer */
 #cont_foot{
     display: grid;
     background-color: #3D9FE1 ;  
@@ -78,12 +85,15 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
 }
+/*titulo del footer contacta con nosotros*/
 div .h3_foot:nth-child(1){
     grid-column: 4/5;
 }
+/*titulo del footer ingenieros web*/
 div .h3_foot:nth-child(2){
     grid-column: 4/5;
 }
+/*main que contiene las tablas tipo grid*/
 main{
     display:grid;
     grid-template-columns: 5% 1fr;
@@ -120,6 +130,16 @@ color: black;
 #link_aniadir:hover{
     cursor:copy;
 }
-.h3_aniadir{
+.h3_aniadir,.h3_modificar{
     text-align: center;
+}
+#tabla_busqueda .card{
+    margin: 2px;
+    background-color:#47DCA3 ;
+    padding: 5px;
+    border: black 2px double;
+    border-radius: 5%;
+}
+#tabla_busqueda input[type="button"]{
+    border-radius: 20%;
 }

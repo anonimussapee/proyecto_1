@@ -14,7 +14,8 @@ export function show_in_html(donde){
 }
 /*en esta funcion se habre una tabla para añadir productos*/
 export function abrir_aniadir(donde){
-let etiqueta=`<h3 class="h3_aniadir">Añadir productos</h3><form><label for="nombre_aniadir">Ingresa el nombre del producto</label><input id="nombre_aniadir" type="text" place holder="...."><br><label for="precio_aniadir">Ingresa el precio</label><input id="precio_aniadir" type="text" placeholder="0.00"><br><label for="cant_aniadir">Ingresa la cantidad</label><input id="cant_aniadir" type="text" placeholder="0"><br><input type="button" value="añadir" id="btn_añadir_productos"></form>`;
+let etiqueta=`<div  class="card"><h3 class="h3_aniadir">Añadir productos</h3><form><label for="nombre_aniadir">Ingresa el nombre del producto</label><input id="nombre_aniadir" type="text" placeholder="funda jumbo"><br><label for="precio_aniadir">Ingresa el precio</label><input id="precio_aniadir" type="text" placeholder="0.00"><br><label for="cant_aniadir">Ingresa la cantidad</label><input id="cant_aniadir" type="text" placeholder="0"><br><label for="oferta_aniadir">ingresa si hay ofertas del producto</label><input id="oferta_aniadir" type="text" placeholder="ninguna oferta"><br><input type="button" value="añadir" id="btn_añadir_productos"></form></div>`;
+etiqueta+=`<div class="card"><h3 class="h3_modificar">Modificar producto</h3><form><label for=modificar_x_id>ingresar el id del producto</label><input id="modificar_x_id" type="text" placeholder="105"><br><input type="button" value="buscar"></form><br><form id="mostrar_form"></form></div>`
 donde.innerHTML=etiqueta;
 } 
 /*esta función busca los productos por el nombre*/
