@@ -7,7 +7,7 @@
     <title>PRIMER PROYECTO</title>
     <link rel="stylesheet" href="./assets/estilo/estilo.css">
     <script src="./src/main.js" type="module"></script>
-    <script src="./src/modules.js" type="module"></script>
+    <script src="./src/modules_aniadir.js" type="module"></script>
 </head>
 <body>
     <section>
@@ -17,7 +17,7 @@
     </section> 
     <main>
         <div id="sec_options">
-            <a id="link_aniadir"  href="./aniadir.html"><img src="https://cdn-icons-png.flaticon.com/512/2037/2037149.png" alt="">añadir</a>
+            <a id="link_aniadir"><img src="https://cdn-icons-png.flaticon.com/512/2037/2037149.png" alt="">añadir</a>
             <a href=""><img src="https://icones.pro/wp-content/uploads/2021/05/icones-de-messagerie-noires.png" alt="">mensaje</a>
             <a href=""><img src="https://cdn-icons-png.flaticon.com/512/313/313115.png" alt="">vender</a>
             <a href=""><img src="https://cdn-icons-png.flaticon.com/512/6073/6073874.png" alt="">ajustes</a>
@@ -25,12 +25,12 @@
         </div>
         <div id="container_tables">
             <section id="section_table"> 
-                <table id="tabla_productos">
-
-                </table>
-                <table id="tabla_busqueda">
-
-                </table>   
+                <section class="section_aniadir">
+                    <div  class="card"><h3 class="h3_aniadir">Añadir productos</h3><form><label for="producto_aniadir">Ingresa el nombre del producto</label><input id="producto_aniadir" type="text" placeholder="funda jumbo"><br><label for="costo_aniadir">Ingresa el precio</label><input id="costo_aniadir" type="number" placeholder="0.00"><br><label for="cant_aniadir">Ingresa la cantidad</label><input id="cant_aniadir" type="number" placeholder="0"><br><label for="oferta_aniadir">ingresa si hay ofertas del producto</label><input id="oferta_aniadir" type="text" placeholder="ninguna oferta"><br><input id="btn_aniadir" type="button" value="añadir" ></form></div>
+                </section>
+                <section class="section_actualizar">
+                    <div class="card"><h3 class="h3_actualizar">Actualizar producto</h3><form><label for="modificar_x_id">ingresar el id del producto</label><input id="modificar_x_id" type="text" placeholder="105"><br><input type="submit" value="buscar"></form><br><form id="mostrar_form"></form></div>
+                </section>   
             </section>
         </div> 
     </main>

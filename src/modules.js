@@ -4,10 +4,9 @@ window.addEventListener('load', async function(){
 var see= await import("./main.js");
 see.show_in_html(table_products);
 });
-/*esta funcion desplegara los resultados de la busqueda por nombre y id*/
+/*esta funcion desplegara los resultados de la busqueda por nombre y id del nav bar*/
 var table_search_for_name=document.getElementById("tabla_busqueda");
 var btn_search=document.getElementById("btn_buscar");
-
 btn_search.addEventListener('click',async function(){
     var check_id_ref=document.getElementById("check_id");
     var word=document.getElementById("buscar_nombre");
@@ -15,8 +14,4 @@ btn_search.addEventListener('click',async function(){
     var search=await import("./main.js");
     search.search_for_name_id(table_search_for_name,word_d,check_id_ref);
 });
-var btn_abrir_aniadir=document.getElementById("link_aniadir");
-btn_abrir_aniadir.addEventListener("click",async function(){
-    let abrir= await import("./main.js");
-    abrir.abrir_aniadir(table_search_for_name);
-})
+

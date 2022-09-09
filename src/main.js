@@ -1,4 +1,4 @@
-/*fucntion para generar numeros de 3 digitos para el stock*/
+/*fucntion para generar numeros de 3 digitos para el id del stock*/
 var valor_bd=100;
 function num_stock(){
 valor_bd=valor_bd+1;
@@ -12,12 +12,12 @@ export function show_in_html(donde){
     }
     donde.innerHTML=etiquetas;
 }
-/*en esta funcion se habre una tabla para añadir productos*/
-export function abrir_aniadir(donde){
-let etiqueta=`<div  class="card"><h3 class="h3_aniadir">Añadir productos</h3><form><label for="nombre_aniadir">Ingresa el nombre del producto</label><input id="nombre_aniadir" type="text" placeholder="funda jumbo"><br><label for="precio_aniadir">Ingresa el precio</label><input id="precio_aniadir" type="text" placeholder="0.00"><br><label for="cant_aniadir">Ingresa la cantidad</label><input id="cant_aniadir" type="text" placeholder="0"><br><label for="oferta_aniadir">ingresa si hay ofertas del producto</label><input id="oferta_aniadir" type="text" placeholder="ninguna oferta"><br><input type="button" value="añadir" id="btn_añadir_productos"></form></div>`;
-etiqueta+=`<div class="card"><h3 class="h3_modificar">Modificar producto</h3><form><label for=modificar_x_id>ingresar el id del producto</label><input id="modificar_x_id" type="text" placeholder="105"><br><input type="button" value="buscar"></form><br><form id="mostrar_form"></form></div>`
-donde.innerHTML=etiqueta;
-} 
+
+/*funcion del btn añadir producto*/ 
+export function aniadir_a_stock(product,canti,cost,ofert=""){
+    stock.push({producto:product,cant:canti,costo:cost,id:num_stock(),oferta:ofert});
+    console.log(stock);
+}
 /*esta función busca los productos por el nombre*/
 export function search_for_name_id(where,word,checki){
     var data=`<caption>Tú busqueda esta lista</caption><th>PRODUCTO</th><th>CANTIDAD</th><th>COSTO</th><th>ID</th><th>OFERTA</th>`;
